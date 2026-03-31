@@ -129,10 +129,6 @@ Ingeniero en Tecnologías de la Información
 - 💼 FullStack Developer — 3 años de experiencia (Coppel SA de CV)
 - 📱 Mobile Developer — Xamarin Forms / Android
 - 🌐 Web Master — Angular, ColdFusion, WordPress
-- 🎤 Ponente en el 1er Congreso Internacional de Mecatrónica, Control e Inteligencia Artificial
-
-📧 necrox_mar01@outlook.com
-📞 +52 834 266 6114
 
 ---
 
@@ -141,5 +137,3 @@ Ingeniero en Tecnologías de la Información
 Este proyecto es de uso personal. El código puede ser revisado con fines educativos, pero no debe ser redistribuido ni usado comercialmente sin autorización.
 
 ---
-
-<p align="center">Hecho por Jose Carlos Mar Rangel</p>
