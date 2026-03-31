@@ -1,0 +1,31 @@
+<div class="shell">
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="profile-mini">
+      <span class="initials">Jose Carlos Mar Rangel</span>
+    </div>
+    <br>
+    @for (item of navItems; track item.path) {
+  <a [routerLink]="item.path" routerLinkActive="active" class="nav-item">
+    <span class="icon">{{ item.icon }}</span>
+    <span>{{ item.label }}</span>
+  </a>
+}
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="content">
+    <!-- Tabs superiores -->
+    <div class="tabs">
+      @for (item of navItems; track item.path) {
+        <a [routerLink]="item.path" routerLinkActive="active-tab" class="tab">
+          {{ item.label }}
+        </a>
+      }
+    </div>
+
+    <div class="page-wrapper">
+    <router-outlet />
+  </div>
+  </main>
+</div>

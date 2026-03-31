@@ -1,0 +1,71 @@
+<div class="perfil-container">
+
+  <!-- Hero card -->
+  <div class="hero-card">
+    <img src="ico.png" class="avatar-img">
+    <div class="hero-info">
+      <div class="hero-top">
+        <div>
+          <h1>Jose Carlos Mar Rangel</h1>
+          <h2>Ingeniero en Tecnologías de la Información</h2>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span> Disponible
+        </div>
+      </div>
+      <p class="bio">
+        Gestor de proyectos de TI con experiencia en el desarrollo de software
+        multiplataforma y diseño. Con conocimiento en sistemas operativos Linux.
+      </p>
+      <div class="contact-chips">
+        <a href="https://www.linkedin.com/in/carlos-mar" target="_blank" class="chip">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+       style="width:14px;height:14px;filter:invert(29%) sepia(98%) saturate(1234%) hue-rotate(200deg) brightness(90%)" >
+  LinkedIn
+</a>
+        <span class="chip">📍 México</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid inferior -->
+  <div class="info-grid">
+
+    <div class="card">
+      <h3 class="card-title">Puestos de interés</h3>
+      <div class="tags">
+        @for (puesto of puestos; track puesto) {
+          <span class="tag tag-blue">{{ puesto }}</span>
+        }
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Aptitudes</h3>
+      <div class="aptitudes-list">
+        @for (apt of aptitudes; track apt.label) {
+          <div class="aptitud-item">
+            <span class="apt-icon">{{ apt.icon }}</span>
+            <span>{{ apt.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Idiomas</h3>
+      @for (idioma of idiomas; track idioma.nombre) {
+        <div class="idioma-item">
+          <div class="idioma-header">
+            <span>{{ idioma.nombre }}</span>
+            <span class="idioma-nivel">{{ idioma.nivel }}</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width]="idioma.porcentaje + '%'"></div>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</div>

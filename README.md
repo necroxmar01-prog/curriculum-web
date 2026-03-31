@@ -90,32 +90,20 @@ docker run -p 8080:80 portfolio-jcmr
 
 Accede en: [http://localhost:8080](http://localhost:8080)
 
----
-
-## 🏗️ Build para producción
-
-```bash
-ng build --configuration production
-```
-
-Los archivos compilados se generan en la carpeta `/dist`. Listos para desplegar en Apache, Nginx, o cualquier servidor web estático.
-
----
-
 ## 📁 Estructura del proyecto
 
 ```
 📦 portfolio-jcmr/
+├── 📂 public/                   #Imágenes, iconos, etc
 ├── 📂 src/
 │   ├── 📂 app/
 │   │   ├── 📂 components/       # Componentes de la UI
-│   │   ├── 📂 pages/            # Vistas principales (home, about, experience...)
-│   │   └── 📂 assets/           # Imágenes, íconos, fuentes
+│   │   ├── 📂 pages/            # Vistas principales
+│   │   ├── 📂 shell/            # Shell global que engloba las vistas
 │   ├── index.html
 │   └── styles.css
 ├── 📄 angular.json
 ├── 📄 package.json
-├── 🐳 Dockerfile
 └── 📄 README.md
 ```
 

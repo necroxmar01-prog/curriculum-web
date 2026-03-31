@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --fluent-bg: #0d1b2e;
+  --fluent-surface: #112240;
+  --fluent-sidebar: #0a1628;
+  --fluent-accent: #2563eb;
+  --fluent-accent-h: #3b82f6;
+  --fluent-text: #e2e8f0;
+  --fluent-muted: #64748b;
+  --fluent-border: rgba(255, 255, 255, 0.08);
+  --fluent-radius: 8px;
+}
+
+body {
+  background: var(--fluent-bg);
+  color: var(--fluent-text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+.sidebar {
+  background: var(--fluent-sidebar);
+  padding: 24px 12px;
+  border-right: 1px solid var(--fluent-border);
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--fluent-radius);
+  color: var(--fluent-muted);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--fluent-text);
+}
+.nav-item.active {
+  border-left: 3px solid var(--fluent-accent);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.tabs {
+  display: flex;
+  gap: 4px;
+  padding: 12px 24px 0;
+  border-bottom: 1px solid var(--fluent-border);
+}
+.tab {
+  padding: 8px 16px;
+  color: var(--fluent-muted);
+  text-decoration: none;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s;
+}
+.tab:hover {
+  color: var(--fluent-text);
+  background: rgba(255, 255, 255, 0.04);
+}
+.tab.active-tab {
+  color: var(--fluent-accent-h);
+  border-bottom: 2px solid var(--fluent-accent);
+} /* You can add global styles to this file, and also import other style files */
