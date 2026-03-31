@@ -8,9 +8,7 @@
 
 <!-- Agrega aquí un screenshot o GIF de tu portafolio -->
 
-> _Coming soon — deploy en progreso_
-
----
+![Vista Previa](https://github.com/necroxmar01-prog/curriculum-web/blob/task-base-experiencia/public/vistaPrevia.png?raw=true)
 
 ## 🚀 Descripción del proyecto
 
