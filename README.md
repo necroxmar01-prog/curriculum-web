@@ -8,9 +8,7 @@
 
 <!-- Agrega aquí un screenshot o GIF de tu portafolio -->
 
-> _Coming soon — deploy en progreso_
-
----
+![Mi foto](public/vistaPrevia.png.png)---
 
 ## 🚀 Descripción del proyecto
 
