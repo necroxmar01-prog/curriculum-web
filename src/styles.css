@@ -70,4 +70,4 @@ body {
 .tab.active-tab {
   color: var(--fluent-accent-h);
   border-bottom: 2px solid var(--fluent-accent);
-} /* You can add global styles to this file, and also import other style files */
+}
