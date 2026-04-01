@@ -15,6 +15,5 @@ export class Shell {
     { path: '/habilidades', label: 'Habilidades', icon: '🛠️' },
     { path: '/educacion', label: 'Educación', icon: '🎓' },
     { path: '/proyectos', label: 'Proyectos', icon: '🚀' },
-    { path: '/contacto', label: 'Contacto', icon: '📬' },
   ];
 }

@@ -16,7 +16,6 @@ Este repositorio contiene el código fuente de mi **sitio web personal**, que fu
 
 - 📄 **Currículum vitae en línea** — información profesional, experiencia y educación
 - 🛠️ **Portafolio técnico** — proyectos desarrollados y tecnologías utilizadas
-- 📬 **Canal de contacto** — formulario o links directos para conectar
 
 El objetivo es tener un espacio profesional en la web que refleje mis habilidades como desarrollador FullStack y gestor de proyectos TI.
 
