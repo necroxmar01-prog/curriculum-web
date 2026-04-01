@@ -26,7 +26,7 @@ El objetivo es tener un espacio profesional en la web que refleje mis habilidade
 | Categoría            | Tecnología                          |
 | -------------------- | ----------------------------------- |
 | Frontend             | Angular / HTML / CSS / TypeScript   |
-| Backend              | (si aplica — Node.js, C#, etc.)     |
+| Backend              | (— Node.js, C#, etc.)     |
 | Base de datos        | PostgreSQL / SQL Server             |
 | DevOps / Deploy      | Docker, Apache, Azure DevOps, CI/CD |
 | Control de versiones | GitHub                              |
