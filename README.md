@@ -8,7 +8,7 @@
 
 <!-- Agrega aquí un screenshot o GIF de tu portafolio -->
 
-![Vista Previa]([https://github.com/necroxmar01-prog/curriculum-web/blob/task-base-experiencia/public/vistaPrevia.png?raw=true](https://github.com/necroxmar01-prog/curriculum-web/blob/main/public/vistaPrevia.png?raw=true))
+![Vista Previa](https://github.com/necroxmar01-prog/curriculum-web/blob/98c4d0ef9447f1588e8a06e35bfcf413ed3891c4/public/vistaPrevia.png)
 
 ## 🚀 Descripción del proyecto
 
