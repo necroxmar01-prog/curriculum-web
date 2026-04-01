@@ -88,6 +88,14 @@ docker run -p 8080:80 portfolio-jcmr
 
 Accede en: [http://localhost:8080](http://localhost:8080)
 
+---
+
+## Compilación de proyecto para su deploy en producción
+
+```bash
+npm run build:prod
+```
+
 ## 📁 Estructura del proyecto
 
 ```
