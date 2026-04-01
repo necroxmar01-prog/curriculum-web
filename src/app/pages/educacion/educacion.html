@@ -1,0 +1,63 @@
+<div class="educacion-container">
+
+  <div class="page-header">
+    <h1>Educación & Certificados</h1>
+    <p>Formación académica y reconocimientos</p>
+  </div>
+
+  <!-- Educación -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">Historial Académico</h2>
+
+    @for (edu of educacion; track edu.institucion) {
+      <div class="edu-card">
+        <div class="edu-left">
+          <div class="edu-icono" [style.background]="edu.color + '18'"
+               [style.color]="edu.color">
+            {{ edu.icono }}
+          </div>
+          <div class="edu-linea"></div>
+        </div>
+
+        <div class="edu-content">
+          <div class="edu-header">
+            <div>
+              <h3>{{ edu.grado }}</h3>
+              <h4>{{ edu.institucion }}</h4>
+            </div>
+            <span class="periodo-badge">{{ edu.periodo }}</span>
+          </div>
+
+          <p class="edu-descripcion">{{ edu.descripcion }}</p>
+
+          <div class="tesis-box">
+            <span class="tesis-label">📄 Tesis</span>
+            <p>{{ edu.tesis }}</p>
+          </div>
+        </div>
+      </div>
+    }
+  </section>
+
+  <!-- Certificados -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">Certificados & Reconocimientos</h2>
+
+    <div class="certs-grid">
+      @for (cert of certificados; track cert.nombre) {
+        <div class="cert-card">
+          <div class="cert-icono" [style.background]="cert.color + '18'"
+               [style.color]="cert.color">
+            {{ cert.icono }}
+          </div>
+          <div class="cert-info">
+            <h4>{{ cert.nombre }}</h4>
+            <span class="cert-emisor">{{ cert.emisor }}</span>
+          </div>
+          <div class="cert-check" [style.color]="cert.color">✓</div>
+        </div>
+      }
+    </div>
+  </section>
+
+</div>

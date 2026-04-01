@@ -1,0 +1,83 @@
+<div class="proyectos-container">
+  <div class="page-header">
+    <h1>Proyectos</h1>
+    <p>Trabajos universitarios, laborales y personales</p>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filtros">
+    @for (filtro of filtros; track filtro) {
+      <button
+        class="filtro-btn"
+        [class.activo]="filtroActivo === filtro"
+        (click)="setFiltro(filtro)"
+      >
+        {{ filtro }}
+      </button>
+    }
+  </div>
+
+  <!-- Grid de proyectos -->
+  <div class="proyectos-grid">
+    @for (proyecto of proyectosFiltrados; track proyecto.nombre) {
+      <div class="proyecto-card">
+        <div class="card-top" [style.background]="proyecto.color + '12'">
+          <span class="proyecto-icono">{{ proyecto.icono }}</span>
+          <span
+            class="tipo-badge"
+            [style.background]="proyecto.color + '20'"
+            [style.color]="proyecto.color"
+          >
+            {{ proyecto.tipo }}
+          </span>
+        </div>
+
+        <div class="card-body">
+          <div class="card-header">
+            <h3>{{ proyecto.nombre }}</h3>
+            <span
+              class="estado-badge"
+              [class.completado]="proyecto.estado === 'Completado'"
+              [class.en-desarrollo]="proyecto.estado === 'En desarrollo'"
+              [class.actual]="proyecto.estado === 'Actual'"
+            >
+              {{ proyecto.estado }}
+            </span>
+          </div>
+
+          <p class="descripcion">{{ proyecto.descripcion }}</p>
+
+          <div class="tecnologias">
+            @for (tech of proyecto.tecnologias; track tech) {
+              <span
+                class="tech-tag"
+                [style.background]="proyecto.color + '15'"
+                [style.color]="proyecto.color"
+                [style.border]="'1px solid ' + proyecto.color + '35'"
+              >
+                {{ tech }}
+              </span>
+            }
+          </div>
+        </div>
+
+        @if (proyecto.link || proyecto.repo) {
+          <div class="card-footer">
+            @if (proyecto.link) {
+              <a [href]="proyecto.link" target="_blank" class="btn-link"> 🌐 Ver proyecto </a>
+            }
+            @if (proyecto.repo) {
+              <a [href]="proyecto.repo" target="_blank" class="btn-repo">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+                  style="width: 14px; height: 14px; filter: invert(1)"
+                />
+                Repositorio
+              </a>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

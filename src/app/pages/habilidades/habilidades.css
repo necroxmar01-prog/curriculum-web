@@ -1,0 +1,148 @@
+.habilidades-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.page-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cat-icon {
+  font-size: 22px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.habilidades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.habilidad-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hab-nombre {
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.hab-nivel {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+@media (max-width: 1024px) {
+  .categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categorias-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .categorias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .hab-nombre {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-header h1 {
+    color: #1b75dc;
+  }
+  .card {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  .card-header {
+    border-bottom-color: #334155;
+  }
+  .hab-nombre {
+    color: #cbd5e1;
+  }
+  .progress-bar {
+    background: #334155;
+  }
+}
