@@ -1,0 +1,73 @@
+<div class="experiencia-container">
+
+  <div class="page-header">
+    <h1>Experiencia Laboral</h1>
+    <p>Trayectoria profesional y proyectos destacados</p>
+  </div>
+
+  <div class="timeline">
+    @for (trabajo of trabajos; track trabajo.empresa) {
+      <div class="timeline-item">
+
+        <!-- Línea y punto -->
+        <div class="timeline-marker">
+          <div class="marker-dot" [style.background]="trabajo.color"></div>
+          <div class="marker-line"></div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="timeline-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <div class="empresa-icon" [style.background]="trabajo.color + '18'"
+                   [style.color]="trabajo.color">
+                {{ trabajo.empresa[0] }}
+              </div>
+              <div>
+                <h2>{{ trabajo.puesto }}</h2>
+                <h3>{{ trabajo.empresa }}</h3>
+              </div>
+            </div>
+            <div class="card-header-right">
+              <span class="periodo">{{ trabajo.periodo }}</span>
+              @if (trabajo.activo) {
+                <span class="badge-activo">
+                  <span class="dot-activo"></span> Actual
+                </span>
+              }
+            </div>
+          </div>
+
+          <p class="descripcion">{{ trabajo.descripcion }}</p>
+
+          <div class="card-body">
+            <div class="actividades">
+              <h4>Actividades</h4>
+              @for (act of trabajo.actividades; track act) {
+                <div class="actividad-item">
+                  <span class="check">✓</span>
+                  <span>{{ act }}</span>
+                </div>
+              }
+            </div>
+
+            <div class="herramientas">
+              <h4>Herramientas</h4>
+              <div class="tags">
+                @for (tool of trabajo.herramientas; track tool) {
+                  <span class="tag" [style.background]="trabajo.color + '15'"
+                        [style.color]="trabajo.color"
+                        [style.border]="'1px solid ' + trabajo.color + '40'">
+                    {{ tool }}
+                  </span>
+                }
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    }
+  </div>
+
+</div>
